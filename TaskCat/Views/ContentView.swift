@@ -30,12 +30,9 @@ struct ContentView: View {
             VStack(spacing: 16) {
                 
                 // 猫エリア
-                // GeometryReader 内
-                    GeometryReader { geo in
-                        CatView(state: viewModel.catState, height: geo.size.height / 4)
-                            .padding(.top, 20)
-                            .frame(maxWidth: .infinity)
-                    }
+                CatView(state: viewModel.catState, height: UIScreen.main.bounds.height / 4)
+                    .padding(.top, 20)
+                    .frame(maxWidth: .infinity)
                 // タスクリスト
                 List {
                     // 既存タスク
