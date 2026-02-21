@@ -30,7 +30,7 @@ struct ContentView: View {
             VStack(spacing: 16) {
                 
                 // 猫エリア
-                CatView(state: viewModel.catState, height: UIScreen.main.bounds.height / 4)
+                CatView(state: viewModel.catState, height: UIScreen.main.bounds.height / 5)
                     .padding(.top, 20)
                     .frame(maxWidth: .infinity)
                 // タスクリスト
